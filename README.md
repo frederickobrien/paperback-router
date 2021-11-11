@@ -1,70 +1,30 @@
-# Getting Started with Create React App
+# Books Routes
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is an attempt to map text narratives onto a map of the world. In loose terms, I expect there to be one unchanging map, with each text comprising a layer. A line would be the goal to start with, but the format could expand to show passages, illustrations, landmarks mentioned in the text, travel guides for would-be imitators, and so on. 
 
-## Available Scripts
+## Potential texts
 
-In the project directory, you can run:
+### Fiction
 
-### `yarn start`
+- _The Grapes of Wrath_ by John Steinbeck
+- _The Road_ by Jack Kerouac
+- _Dracula_ by Bram Stoker
+- _Around the World in 80 Days_ by Jules Verne
+- _Moby-Dick_ by Herman Melville
+- _Heart of Darkness_ by Joseph Conrad
+- _The Sheltering Sky_ by Paul Bowles
+- _Robinson Crusoe_ by Daniel Defoe
+- _Candide_ by Voltaire
+- _Don Quixote_ by Miguel de Cervantes
+- _The Alchemist_ by Paulo Coelho
+- _The Adventures of Huckleberry Finn_ by Mark Twain
+- _Lonesome Dove_ by Larry McMurtry
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Nonfiction
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `yarn test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- _The Great Railway Bazaar_ by Paul Theroux
+- _Pictures from Italy_ by Charles Dickens
+- _The Voyage of the Beagle_ by Charles Darwin
+- _Tracks_ by Robyn Davidson
+- _The Travels of Marco Polo_ by Rustichello da Pisa
+- _Great Tang Records on the Western Regions_ by Xuanzang
