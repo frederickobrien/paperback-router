@@ -19,6 +19,7 @@ This project is an attempt to map text narratives onto a map of the world. In lo
 - _The Alchemist_ by Paulo Coelho
 - _The Adventures of Huckleberry Finn_ by Mark Twain
 - _Lonesome Dove_ by Larry McMurtry
+- _Life of Pi_ by Yann Martel
 
 ### Nonfiction
 
