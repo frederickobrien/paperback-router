@@ -19,12 +19,12 @@ This project is an attempt to map text narratives onto a map of the world. In lo
 - _The Road_ by Jack Kerouac
 - _Dracula_ by Bram Stoker
 - _Around the World in 80 Days_ by Jules Verne
-- _Moby-Dick_ by Herman Melville
+- [_Moby-Dick_](https://www.gutenberg.org/ebooks/2701) by Herman Melville
 - _Heart of Darkness_ by Joseph Conrad
 - _The Sheltering Sky_ by Paul Bowles
 - _Robinson Crusoe_ by Daniel Defoe
-- _Candide_ by Voltaire
-- _Don Quixote_ by Miguel de Cervantes
+- [_Candide_](https://www.gutenberg.org/ebooks/19942) by Voltaire
+- [_Don Quixote_](https://www.gutenberg.org/ebooks/996) by Miguel de Cervantes
 - _The Alchemist_ by Paulo Coelho
 - _The Adventures of Huckleberry Finn_ by Mark Twain
 - _Lonesome Dove_ by Larry McMurtry
@@ -33,8 +33,8 @@ This project is an attempt to map text narratives onto a map of the world. In lo
 ### Nonfiction
 
 - _The Great Railway Bazaar_ by Paul Theroux
-- _Pictures from Italy_ by Charles Dickens
-- _The Voyage of the Beagle_ by Charles Darwin
+- [_Pictures from Italy_](https://www.gutenberg.org/ebooks/650) by Charles Dickens
+- [_The Voyage of the Beagle_](https://www.gutenberg.org/ebooks/944) by Charles Darwin
 - _Tracks_ by Robyn Davidson
-- _The Travels of Marco Polo_ by Rustichello da Pisa
+- [_The Travels of Marco Polo_](https://www.gutenberg.org/ebooks/10636) by Rustichello da Pisa
 - _Great Tang Records on the Western Regions_ by Xuanzang
