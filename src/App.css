@@ -15,17 +15,42 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  margin-bottom: 2em;
 }
 
 .App-link {
   color: #61dafb;
+}
+
+.map-container {
+  display: block;
+  margin: auto;
+  /* border: 2px solid blue; */
+}
+
+.marks .land {
+  fill: lightgray;
+}
+
+.marks .interiors {
+  fill: none;
+  stroke: #eee;
+  stroke-width: 0.5;
+}
+
+.marks .sphere {
+  fill: #eee;
+}
+
+.marks .graticules {
+  fill: none;
+  stroke: #ddd;
 }
 
 @keyframes App-logo-spin {
