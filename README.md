@@ -1,4 +1,4 @@
-# Book Routes
+# Paperback Router
 
 This project is an attempt to map text narratives onto a map of the world. In loose terms, I expect there to be one unchanging map, with each text comprising a layer. A line would be the goal to start with, but the format could expand to show passages, illustrations, landmarks mentioned in the text, travel guides for would-be imitators, and so on. 
 
