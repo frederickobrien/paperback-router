@@ -103,5 +103,5 @@
 
 <div style="width: 100%;">
 	<!-- <svg id="map" style="width: 100vw; height: 1000vh" /> -->
-	<svg id="map" style="width: 100vw; height: 800px" />
+	<svg id="map" style="width: 100vw; height: 100vh" />
 </div>
