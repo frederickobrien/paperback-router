@@ -1,59 +1,99 @@
-// Moby-Dick
-var mobyDickCoordinates = [
-  { lat: 40.781, lng: -73.965 }, // Manhattan Island
-  { lat: 41.018, lng: -73.634 },
-  { lat: 41.106, lng: -73.42 },
-  { lat: 41.301, lng: -72.911 },
-  { lat: 41.374, lng: -72.192 },
-  { lat: 41.375, lng: -71.912 },
-  { lat: 41.512, lng: -71.692 },
-  { lat: 41.65, lng: -71.61 },
-  { lat: 41.671, lng: -71.48 },
-  { lat: 41.82, lng: -71.414 }, // Providence
-  { lat: 41.818, lng: -71.381 },
-  { lat: 41.765, lng: -71.237 },
-  { lat: 41.681, lng: -71.121 },
-  { lat: 41.636, lng: -70.934 }, // New Bedford
-  { lat: 41.636, lng: -70.914 },
-  { lat: 41.573, lng: -70.864 },
-  { lat: 41.517, lng: -70.676 },
-  { lat: 41.299, lng: -70.101 },
-  { lat: 41.291, lng: -70.087 },
-  { lat: 41.282, lng: -70.099 }, // Nantucket
-  { lat: 41.291, lng: -70.087 },
-  { lat: 41.296, lng: -70.094 },
-  { lat: 41.301, lng: -70.096 },
-  { lat: 41.396, lng: -70.051 },
-  { lat: 39.309, lng: -32.894 },
-  { lat: 38.7, lng: -30.458 }, // Azores
-  { lat: 36.783, lng: -28.133 },
-  { lat: 15.91, lng: -26.516 }, // Cape de Verde
-  { lat: -10.737, lng: -27.431 },
-  { lat: -23.236, lng: -35.6 },
-  { lat: -34.151, lng: -52.065 },
-  { lat: -35.591, lng: -55.906 }, // Mouth of the Rio de la Plata
-  { lat: -35.759, lng: -55.162 },
-  { lat: -35.621, lng: -54.239 },
-  { lat: -16.252, lng: -8.31 },
-  { lat: -16.31, lng: -5.709 }, // St. Helena
-  { lat: -17.557, lng: -3.605 },
-  { lat: -34.948, lng: 18.05 }, // Cape Town
-  { lat: -45.009, lng: 45.832 },
-  { lat: -45.71, lng: 51.21 }, // Crozet Islands
-  { lat: -44.729, lng: 58.708 },
-  { lat: -39.699, lng: 67.402 },
-  { lat: -6.535, lng: 105.086 },
-  { lat: -5.912, lng: 105.831 }, // Sunda Strait
-  { lat: 3.518, lng: 109.506 },
-  { lat: 19.758, lng: 119.645 }, // Batanes Islands
-  { lat: 21.702, lng: 121.767 },
-  { lat: 30.811, lng: 146.917 }, // Japanese fishing grounds
-  { lat: 10.626, lng: 172.898 }, // Fin.
+// Xuanzang
+var xuanzangCoordinates = [
+  { lat: 34.341, lng: 108.939 }, // Chang an
+  { lat: 37.928, lng: 102.642 }, // Wuwei
+  { lat: 40.52, lng: 95.782 }, // An-hsi
+  { lat: 42.818, lng: 93.515 }, // Hami
+  { lat: 42.951, lng: 89.189 }, // Turfan
+  { lat: 42.062, lng: 86.57 }, // Karashahr
+  { lat: 41.631, lng: 82.897 }, // Kucha
+  { lat: 41.167, lng: 80.263 }, // Aksu
+  { lat: 42.822, lng: 75.317 }, // Tokmok
+  { lat: 41.299, lng: 69.24 }, // Tashkent
+  { lat: 39.627, lng: 66.974 }, // Samarkand
+  { lat: 36.728, lng: 68.868 }, // Kunduz
+  { lat: 36.755, lng: 66.897 }, // Balkh
+  { lat: 34.81, lng: 67.821 }, // Bamiyan
+  { lat: 34.981, lng: 69.621 }, // Kapisa
+  { lat: 34.419, lng: 70.472 }, // Nagaraha
+  { lat: 34.015, lng: 71.524 }, // Peshawar
+  { lat: 34.148, lng: 71.737 }, // Charsadda
+  { lat: 35.222, lng: 72.425 }, // Mankiala
+  { lat: 35.222, lng: 72.425 }, // Udyana
+  { lat: 35.87, lng: 72.513 }, // Source of the Swat River
+  { lat: 35.538, lng: 73.48 }, // Darel Valley
+  { lat: 35.87, lng: 72.513 }, // Source of the Swat River
+  { lat: 35.222, lng: 72.425 }, // Udyana
+  { lat: 35.222, lng: 72.425 }, // Mankiala
+  { lat: 34.016, lng: 72.433 }, // Hund
+  { lat: 33.746, lng: 72.839 }, // Taxila
+  { lat: 33.772, lng: 72.847 }, // Sirsukh
+  { lat: 33.813, lng: 72.825 }, // Bhallar Stupa
+  { lat: 33.772, lng: 72.847 }, // Sirsukh
+  { lat: 34.083, lng: 74.797 }, // Srinager
+  { lat: 30.933, lng: 74.622 }, // Chinabhutkti
+  { lat: 31.964, lng: 77.115 }, // Kulu Valley
+  { lat: 27.43, lng: 76.189 }, // Bairata
+  { lat: 27.492, lng: 77.673 }, // Mathura
+  { lat: 30.142, lng: 77.355 }, // Srughna
+  { lat: 28.594, lng: 78.271 }, // Matipura
+  { lat: 27.334, lng: 79.27 }, // Sankasya
+  { lat: 26.46, lng: 80.36 }, // Kanyakubja
+  { lat: 26.787, lng: 82.198 }, // Ayodhya
+  { lat: 25.506, lng: 81.427 }, // Kausambi
+  { lat: 26.787, lng: 82.198 }, // Ayodhya
+  { lat: 27.503, lng: 82.036 }, // Sravasti
+  { lat: 27.517, lng: 82.049 }, // Angulimala Stupa
+  { lat: 27.654, lng: 82.993 }, // Kapilavastu
+  { lat: 27.679, lng: 83.507 }, // Lumbini
+  { lat: 26.739, lng: 83.886 }, // Kushinagara (Kasia)
+  { lat: 25.376, lng: 83.022 }, // Sarnath
+  { lat: 25.683, lng: 85.354 }, // Vaisali
+  { lat: 25.594, lng: 85.137 }, // Patailputra (Patna)
+  { lat: 24.696, lng: 84.986 }, // Bodh Gaya
+  { lat: 25.124, lng: 85.459 }, // Nalanda
+  { lat: 25.17, lng: 86.486 }, // Kingdom of Irana
+  { lat: 23.044, lng: 90.07 }, // Samatata
+  { lat: 26.2, lng: 92.937 }, // Assam
+  { lat: 23.044, lng: 90.07 }, // Samatata
+  { lat: 22.278, lng: 87.918 }, // Tamrallipti
+  { lat: 21.008, lng: 84.938 }, // South Kosala
+  { lat: 16.757, lng: 81.679 }, // Andhra
+  { lat: 16.506, lng: 80.648 }, // Bezwada
+  { lat: 16.575, lng: 80.356 }, // Amaravati Stupa
+  { lat: 15.828, lng: 78.037 }, // Kurnool
+  { lat: 14.651, lng: 79.32 }, // Pallavolu
+  { lat: 12.834, lng: 79.703 }, // Kanchipuram
+  { lat: 16.265, lng: 75.084 }, // tidying
+  { lat: 19.997, lng: 73.789 }, // Nasik
+  { lat: 20.551, lng: 75.703 }, // Ajanta
+  { lat: 21.705, lng: 72.995 }, // Bharuch
+  { lat: 22.768, lng: 73.131 }, // Malva
+  { lat: 21.72, lng: 70.758 }, // Kathiawar Peninsula
+  { lat: 30.157, lng: 71.524 }, // Multan
+  { lat: 33.723, lng: 72.803 }, // Taxila --
+  { lat: 34.015, lng: 71.524 }, // Peshawar
+  { lat: 34.419, lng: 70.472 }, // Jalalabad
+  { lat: 34.981, lng: 69.621 }, // Kapisa
+  { lat: 34.81, lng: 67.821 }, // Bamiyan
+  { lat: 36.755, lng: 66.897 }, // Balkh
+  { lat: 36.728, lng: 68.868 }, // Kunduz
+  { lat: 37.101, lng: 70.555 }, // Feyzabad
+  { lat: 37.772, lng: 75.229 }, // Tashkurghan
+  { lat: 39.467, lng: 75.993 }, // Kashgar
+  { lat: 37.114, lng: 79.922 }, // Hotan
+  { lat: 37.067, lng: 82.696 }, // Niya
+  { lat: 38.145, lng: 85.529 }, // Qiemo
+  { lat: 39.024, lng: 88.166 }, // Ruoqiang
+  { lat: 40.142, lng: 94.661 }, // Dunhuang
+  { lat: 40.52, lng: 95.782 }, // An-hsi --
+  { lat: 37.928, lng: 102.642 }, // Wuwei
+  { lat: 34.341, lng: 108.939 }, // Chang'an
 ];
 
 const csvString = [
   ["Latitude", "Longitude"],
-  ...mobyDickCoordinates.map((item) => [item.lat, item.lng]),
+  ...xuanzangCoordinates.map((item) => [item.lat, item.lng]),
 ]
   .map((e) => e.join(","))
   .join("\n");
