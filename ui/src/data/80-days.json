@@ -1,6 +1,12 @@
 {
   "type": "Feature",
-  "properties": {},
+  "properties": {
+    "name": "Around the World in Eighty Days",
+    "author": "Jules Verne",
+    "year": 1873,
+    "bookType": "fiction",
+    "gutenbergId": 103
+  },
   "geometry": {
     "type": "LineString",
     "coordinates": [

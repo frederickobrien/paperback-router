@@ -5,13 +5,13 @@
 
 	import * as d3 from 'd3';
 	import worldMap from '../data/world.json';
-	import { onMount } from 'svelte';
+	import { onMount, afterUpdate } from 'svelte';
 
 	onMount(async () => {
 		let width = window.innerWidth;
 		let height = window.innerHeight;
 
-		const sensitivity = 50;
+		const sensitivity = 25;
 
 		let projection = d3
 			.geoOrthographic()
@@ -23,7 +23,7 @@
 		const initialScale = projection.scale();
 		let path = d3.geoPath().projection(projection);
 
-		let svg = d3.select('#map').append('svg').attr('width', width).attr('height', height);
+		let svg = d3.select('#map');
 
 		let globe = svg
 			.append('circle')
@@ -51,14 +51,6 @@
 			.style('stroke', 'black')
 			.style('stroke-width', 0.3)
 			.style('opacity', 0.8);
-
-		map
-			.append('path')
-			.datum(bookData)
-			.attr('d', d3.geoPath())
-			.attr('fill-opacity', 0)
-			.attr('stroke', 'red')
-			.attr('stroke-width', 1);
 
 		svg
 			.call(
@@ -92,6 +84,24 @@
 			svg.selectAll('path').attr('d', path);
 		}, 200);
 	});
+
+	afterUpdate(() => {
+		let map = d3.select('#map').append('g');
+
+		d3.select('#selectedBook').remove();
+
+		map
+			.append('path')
+			.attr('id', 'selectedBook')
+			.datum(bookData)
+			.attr('d', d3.geoPath())
+			.attr('fill-opacity', 0)
+			.attr('stroke', 'red')
+			.attr('stroke-width', 1);
+	});
 </script>
 
-<div id="map" style="width: 100%;" />
+<div style="width: 100%;">
+	<!-- <svg id="map" style="width: 100vw; height: 1000vh" /> -->
+	<svg id="map" style="width: 100vw; height: 800px" />
+</div>

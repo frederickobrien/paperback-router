@@ -458,31 +458,6 @@ var draculaCoordinates = [
   { lat: 47.231, lng: 25.119 }, //Dracula's Castle
 ];
 
-// Don Quixote
-var donQuixoteCoordinates = [
-  { lat: 39.067, lng: -3.122 }, //Quixote's home
-  { lat: 39.158, lng: -3.021 }, //Tomelloso
-  { lat: 39.4, lng: -3.125 }, //Campo de Criptana
-  { lat: 39.513, lng: -2.996 }, //El Toboso
-  { lat: 39.603, lng: -2.826 }, //Los Hinojosos
-  { lat: 39.557, lng: -2.705 }, //Belmonte
-  { lat: 39.042, lng: -2.478 }, //Munera
-  { lat: 38.692, lng: -2.695 }, //Villanueva de la Fuente
-  { lat: 39.284, lng: -2.79 }, //Socuéllamos
-  { lat: 39.483, lng: -2.744 }, //Pedernoso
-  { lat: 39.728, lng: -2.414 }, //La Huojosa
-  { lat: 40.358, lng: -2.395 }, //Canaveras
-  { lat: 40.666, lng: -2.069 }, //Peñalén
-  { lat: 40.754, lng: -1.998 }, //Fuembellida
-  { lat: 41.114, lng: -1.414 }, //Daroca
-  { lat: 41.556, lng: -0.685 }, //Northwest of Fuentes de Ebro
-  { lat: 41.521, lng: 0.341 }, //Fraga
-  { lat: 41.552, lng: 0.619 }, //South of Lerida
-  { lat: 41.532, lng: 1.382 }, //Santa Coloma de Queralt
-  { lat: 41.437, lng: 1.783 }, //San Sadurnt
-  { lat: 41.385, lng: 2.173 }, //Barcelona
-];
-
 // Candide
 var candideCoordinates = [
   { lat: 51.433, lng: 7.661 }, // Westphalia
@@ -669,7 +644,57 @@ var masonDixonCoordinates = [
   { lat: 38.46, lng: -75.693 }, //Right end
 ];
 
-// The Travels of Marco Polo
+// Eat, Pray, Love
+var EatPrayLoveCoordinates = [
+  { lat: 40.712, lng: -74.005 }, //New York
+  { lat: 41.902, lng: 12.496 }, //Rome
+  { lat: 19.501, lng: 73.013 }, //Mumbai
+  { lat: -8.409, lng: 115.188 }, //Bali
+];
+
+// Life of Pi
+var LifeofPiCoordinates = [
+  { lat: 11.913, lng: 79.814 }, //Pondicherry
+  { lat: 10.04, lng: 93.066 },
+  { lat: 2.681, lng: 101.146 },
+  { lat: 1.111, lng: 103.574 },
+  { lat: 1.324, lng: 104.455 },
+  { lat: 14.599, lng: 120.984 }, //Manila
+  { lat: 14.361, lng: 120.422 },
+  { lat: 14.813, lng: 119.867 },
+  { lat: 16.232, lng: 119.548 },
+  { lat: 19.107, lng: 120.115 },
+  { lat: 19.821, lng: 120.709 },
+  { lat: 24.58, lng: 159.121 }, //Sinking
+  { lat: 20.289, lng: -105.6206 }, //Mexico
+];
+
+// Don Quixote [DONE]
+var donQuixoteCoordinates = [
+  { lat: 39.067, lng: -3.122 }, //Quixote's home
+  { lat: 39.158, lng: -3.021 }, //Tomelloso
+  { lat: 39.4, lng: -3.125 }, //Campo de Criptana
+  { lat: 39.513, lng: -2.996 }, //El Toboso
+  { lat: 39.603, lng: -2.826 }, //Los Hinojosos
+  { lat: 39.557, lng: -2.705 }, //Belmonte
+  { lat: 39.042, lng: -2.478 }, //Munera
+  { lat: 38.692, lng: -2.695 }, //Villanueva de la Fuente
+  { lat: 39.284, lng: -2.79 }, //Socuéllamos
+  { lat: 39.483, lng: -2.744 }, //Pedernoso
+  { lat: 39.728, lng: -2.414 }, //La Huojosa
+  { lat: 40.358, lng: -2.395 }, //Canaveras
+  { lat: 40.666, lng: -2.069 }, //Peñalén
+  { lat: 40.754, lng: -1.998 }, //Fuembellida
+  { lat: 41.114, lng: -1.414 }, //Daroca
+  { lat: 41.556, lng: -0.685 }, //Northwest of Fuentes de Ebro
+  { lat: 41.521, lng: 0.341 }, //Fraga
+  { lat: 41.552, lng: 0.619 }, //South of Lerida
+  { lat: 41.532, lng: 1.382 }, //Santa Coloma de Queralt
+  { lat: 41.437, lng: 1.783 }, //San Sadurnt
+  { lat: 41.385, lng: 2.173 }, //Barcelona
+];
+
+// The Travels of Marco Polo [DONE]
 var marcoPoloCoordinates = [
   { lat: 45.44, lng: 12.315 }, //Venice
   { lat: 40.166, lng: 18.652 },
@@ -735,7 +760,7 @@ var marcoPoloCoordinates = [
   { lat: 45.44, lng: 12.315 }, //Venice
 ];
 
-// The Grapes of Wrath
+// The Grapes of Wrath [DONE]
 var grapesofWrathCoordinates = [
   { lat: 35.46, lng: -94.787 }, //Sallisaw
   { lat: 35.49, lng: -94.994 },
@@ -771,32 +796,7 @@ var grapesofWrathCoordinates = [
   { lat: 37.774, lng: -122.419 }, //San Francisco
 ];
 
-// Eat, Pray, Love
-var EatPrayLoveCoordinates = [
-  { lat: 40.712, lng: -74.005 }, //New York
-  { lat: 41.902, lng: 12.496 }, //Rome
-  { lat: 19.501, lng: 73.013 }, //Mumbai
-  { lat: -8.409, lng: 115.188 }, //Bali
-];
-
-// Life of Pi
-var LifeofPiCoordinates = [
-  { lat: 11.913, lng: 79.814 }, //Pondicherry
-  { lat: 10.04, lng: 93.066 },
-  { lat: 2.681, lng: 101.146 },
-  { lat: 1.111, lng: 103.574 },
-  { lat: 1.324, lng: 104.455 },
-  { lat: 14.599, lng: 120.984 }, //Manila
-  { lat: 14.361, lng: 120.422 },
-  { lat: 14.813, lng: 119.867 },
-  { lat: 16.232, lng: 119.548 },
-  { lat: 19.107, lng: 120.115 },
-  { lat: 19.821, lng: 120.709 },
-  { lat: 24.58, lng: 159.121 }, //Sinking
-  { lat: 20.289, lng: -105.6206 }, //Mexico
-];
-
-// Huckleberry Finn
+// Huckleberry Finn [DONE]
 var HuckleberryFinnCoordinates = [
   { lat: 39.708, lng: -91.358 }, //Hannibal
   { lat: 39.706, lng: -91.334 }, //Jackson's Island

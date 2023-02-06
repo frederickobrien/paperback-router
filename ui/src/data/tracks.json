@@ -1,6 +1,12 @@
 {
     "type": "Feature",
-    "properties": {},
+    "properties": {
+        "name": "Tracks",
+        "author": "Robyn Davidson",
+        "year": 1977,
+        "bookType": "non-fiction",
+        "gutenbergId": null
+    },
     "geometry": {
         "type": "LineString",
         "coordinates": [
