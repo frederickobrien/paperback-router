@@ -11,8 +11,17 @@
 		<p>{bookData.properties.year}</p>
 		{#if bookData.properties.gutenbergId}
 			<p>
-				<a href={`https://www.gutenberg.org/ebooks/${bookData.properties.gutenbergId}`}
-					>Download free from Project Gutenberg</a
+				<a
+					href={`https://www.gutenberg.org/ebooks/${bookData.properties.gutenbergId}`}
+					target="_blank"
+					rel="noreferrer">Read at Project Gutenberg</a
+				>
+			</p>
+		{/if}
+		{#if bookData.properties.libriVoxLink}
+			<p>
+				<a href={bookData.properties.libriVoxLink} target="_blank" rel="noreferrer"
+					>Listen at LibriVox</a
 				>
 			</p>
 		{/if}

@@ -9,13 +9,13 @@
 </script>
 
 <svelte:head>
-	<title>Book Routes</title>
-	<meta description="Trace the paths of fiction and nonfiction books across the globe." />
+	<title>Paperback Router</title>
+	<meta description="Follow the paths of fiction and nonfiction books routes across the globe." />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 </svelte:head>
 
 <header>
-	<h1>Book Routes</h1>
+	<h1>Paperback Router</h1>
 	<BookSelector bind:activeBook />
 </header>
 
@@ -35,7 +35,6 @@
 	h1 {
 		font-size: 2em;
 		font-weight: 400;
-		text-transform: uppercase;
 		margin: 2rem 0;
 	}
 </style>

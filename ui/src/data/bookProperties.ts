@@ -4,6 +4,7 @@ export type BookProperties = {
 	year: number;
 	bookType: BookType;
 	gutenbergId: number | null;
+	libriVoxLink: string | null;
 };
 
 type BookType = 'fiction' | 'non-fiction';

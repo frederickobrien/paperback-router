@@ -5,7 +5,8 @@
     "author": "Jules Verne",
     "year": 1873,
     "bookType": "fiction",
-    "gutenbergId": 103
+    "gutenbergId": 103,
+    "libriVoxLink": "https://librivox.org/around-the-world-in-eighty-days-by-jules-verne-2/"
   },
   "geometry": {
     "type": "LineString",
