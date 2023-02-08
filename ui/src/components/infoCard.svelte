@@ -11,7 +11,8 @@
 		<p>{bookData.properties.year}</p>
 		{#if bookData.properties.gutenbergId}
 			<p>
-				<a href={`https://www.gutenberg.org/ebooks/${bookData.properties.gutenbergId}`}>Gutenberg</a
+				<a href={`https://www.gutenberg.org/ebooks/${bookData.properties.gutenbergId}`}
+					>Download free from Project Gutenberg</a
 				>
 			</p>
 		{/if}
@@ -24,11 +25,14 @@
 <style>
 	.info-card-container {
 		position: fixed;
-		top: 0;
-		left: 0;
-		width: 30%;
-		height: 100%;
-		background-color: #fff;
-		padding: 1em;
+		top: 5%;
+		left: 5%;
+		/* height: 100%; */
+		padding: 3em;
+		border-radius: 3rem;
+		max-width: 20%;
+	}
+	.info-card-container * {
+		padding: 0.3rem 0;
 	}
 </style>

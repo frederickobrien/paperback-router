@@ -5,8 +5,7 @@
         "author": "Robyn Davidson",
         "year": 1977,
         "bookType": "non-fiction",
-        "gutenbergId": null,
-        "description": "'I experienced that sinking feeling you get when you know you have conned yourself into doing something difficult and there's no going back.' So begins Robyn Davidson's perilous journey across 1,700 miles of hostile Australian desert to the sea with only four camels and a dog for company."
+        "gutenbergId": null
     },
     "geometry": {
         "type": "LineString",
