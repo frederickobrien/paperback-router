@@ -4,6 +4,8 @@
         "name": "The Grapes of Wrath",
         "author": "John Steinbeck",
         "year": 1939,
+        "description": "Set during the Great Depression, the novel focuses on the Joads, a poor family of tenant farmers driven from their Oklahoma home by drought, economic hardship, agricultural industry changes, and bank foreclosures forcing tenant farmers out of work. Due to their nearly hopeless situation, and in part because they are trapped in the Dust Bowl, the Joads set out for California along with thousands of other 'Okies' seeking jobs, land, dignity, and a future.",
+        "coverLink": "https://upload.wikimedia.org/wikipedia/commons/a/ad/The_Grapes_of_Wrath_%281939_1st_ed_cover%29.jpg",
         "bookType": "fiction",
         "gutenbergId": null
     },

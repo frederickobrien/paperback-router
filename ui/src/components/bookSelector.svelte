@@ -6,7 +6,7 @@
 	import aroundTheWorldInEightyDays from '../data/around-the-world-in-eighty-days.json';
 	import tracks from '../data/tracks.json';
 	import theGreatRailwayBazaar from '../data/the-great-railway-bazaar.json';
-	import theAdventuresOfHuckleberryFinn from '../data/the -adventures-of-huckleberry-finn.json';
+	import theAdventuresOfHuckleberryFinn from '../data/the-adventures-of-huckleberry-finn.json';
 	import theGrapesOfWrath from '../data/the-grapes-of-wrath.json';
 	import theTravelsOfMarcoPolo from '../data/the-travels-of-marco-polo.json';
 	import donQuixote from '../data/don-quixote.json';
