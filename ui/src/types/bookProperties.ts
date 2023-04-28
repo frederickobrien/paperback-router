@@ -3,6 +3,7 @@ export type BookProperties = {
 	author: string;
 	year: number;
 	description: string;
+	namedLocations: string[];
 	coverLink?: string;
 	bookType: BookType;
 	gutenbergId?: number;
@@ -10,3 +11,10 @@ export type BookProperties = {
 };
 
 type BookType = 'fiction' | 'non-fiction';
+
+type BookCoordinateObject = {
+	lat: number;
+	lng: number;
+	location: string;
+	passage: string;
+}

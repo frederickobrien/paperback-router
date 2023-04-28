@@ -4,6 +4,8 @@
         "name": "Journey to the West",
         "author": "Wu Cheng'en",
         "year": 1592,
+        "description": "The legendary pilgrimage of the Tang dynasty Buddhist monk Xuanzang, who traveled to the 'Western Regions' (Central Asia and India) to obtain Buddhist sūtras (sacred texts) and returned after many trials and much suffering.",
+        "coverLink": "https://upload.wikimedia.org/wikipedia/commons/6/6a/Evl53201b_pic.jpg?20041108143830",
         "bookType": "fiction",
         "gutenbergId": 23962
     },

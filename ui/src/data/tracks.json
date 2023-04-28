@@ -4,6 +4,8 @@
         "name": "Tracks",
         "author": "Robyn Davidson",
         "year": 1977,
+        "description": "blah",
+        "coverLink": "https://m.media-amazon.com/images/I/81md4xV-y6L.jpg",
         "bookType": "non-fiction",
         "gutenbergId": null
     },

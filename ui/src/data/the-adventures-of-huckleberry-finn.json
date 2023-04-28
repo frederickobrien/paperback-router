@@ -4,6 +4,8 @@
         "name": "The Adventures of Huckleberry Finn",
         "author": "Mark Twain",
         "year": 1884,
+        "description": "To escape from his violent and drunken father, a 13-year-old boy from the wrong side of the tracks, Huckleberry Finn, fakes his own death and floats away on a raft down the Mississippi with Jim, a runaway slave.",
+        "coverLink": "https://static01.nyt.com/images/2017/01/22/books/review/22POWERS/22powers-superJumbo.jpg",
         "bookType": "fiction",
         "gutenbergId": 76
     },

@@ -1,7 +1,6 @@
-<script>
+<script lang="ts">
 	// @ts-nocheck
-
-	export let bookData;
+	export let bookData: GeoJSON.Feature | null = null;
 
 	import * as d3 from 'd3';
 	import worldMap from '../data/world.json';
@@ -86,22 +85,24 @@
 	});
 
 	afterUpdate(() => {
-		let map = d3.select('#map').append('g');
+		if (bookData) {
+			let map = d3.select('#map').append('g');
 
-		d3.select('#selectedBook').remove();
+			d3.select('#selectedBook').remove();
 
-		map
-			.append('path')
-			.attr('id', 'selectedBook')
-			.datum(bookData)
-			.attr('d', d3.geoPath())
-			.attr('fill-opacity', 0)
-			.attr('stroke', 'red')
-			.attr('stroke-width', 1);
+			map
+				.append('path')
+				.attr('id', 'selectedBook')
+				.datum(bookData)
+				.attr('d', d3.geoPath())
+				.attr('fill-opacity', 0)
+				.attr('stroke', 'red')
+				.attr('stroke-width', 1);
+		}
 	});
 </script>
 
 <div style="width: 100%;">
 	<!-- <svg id="map" style="width: 100vw; height: 1000vh" /> -->
-	<svg id="map" style="width: 100vw; height: 100vh" />
+	<svg id="map" style="width: 100vw; height: 100vh;" />
 </div>

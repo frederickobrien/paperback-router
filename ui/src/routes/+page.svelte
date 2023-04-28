@@ -1,16 +1,14 @@
-<script>
-	// @ts-nocheck
-
+<script lang="ts">
 	import Globe from '../components/globe.svelte';
 	import InfoBar from '../components/infoCard.svelte';
 	import BookSelector from '../components/bookSelector.svelte';
 
-	let activeBook = null;
+	let activeBook: GeoJSON.Feature | null = null;
 </script>
 
 <svelte:head>
 	<title>Paperback Router</title>
-	<meta description="Follow the paths of fiction and nonfiction books routes across the globe." />
+	<meta name="description" content="Follow the paths of fiction and nonfiction books routes across the globe." />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 </svelte:head>
 
@@ -22,7 +20,7 @@
 <Globe bookData={activeBook} />
 
 {#if activeBook}
-	<InfoBar bookData={activeBook} />
+	<InfoBar {activeBook} />
 {/if}
 
 <style>

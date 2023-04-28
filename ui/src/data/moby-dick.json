@@ -4,6 +4,8 @@
         "name": "Moby-Dick; Or, The Whale",
         "author": "Herman Melville",
         "year": 1851,
+        "description": "the sailor Ishmael's narrative of the maniacal quest of Ahab, captain of the whaling ship Pequod, for vengeance against Moby Dick, the giant white sperm whale that bit off his leg on the ship's previous voyage.",
+        "coverLink": "https://upload.wikimedia.org/wikipedia/commons/3/36/Moby-Dick_FE_title_page.jpg",
         "bookType": "fiction",
         "gutenbergId": 2701
     },

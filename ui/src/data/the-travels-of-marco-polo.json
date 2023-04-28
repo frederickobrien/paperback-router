@@ -4,6 +4,8 @@
         "name": "The Travels of Marco Polo",
         "author": "Marco Polo",
         "year": 1298,
+        "description": "Blah",
+        "coverLink": "https://upload.wikimedia.org/wikipedia/commons/2/29/Marco_Polo%2C_Il_Milione%2C_Chapter_CXXIII_and_CXXIV.jpg",
         "bookType": "non-fiction",
         "gutenbergId": 10636
     },

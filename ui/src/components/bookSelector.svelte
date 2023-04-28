@@ -1,7 +1,5 @@
-<script>
-	// @ts-nocheck
-
-	export let activeBook;
+<script lang="ts">
+	export let activeBook: GeoJSON.Feature | null = null;
 
 	import aroundTheWorldInEightyDays from '../data/around-the-world-in-eighty-days.json';
 	import tracks from '../data/tracks.json';

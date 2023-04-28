@@ -5,6 +5,18 @@
     "author": "Jules Verne",
     "year": 1873,
     "description": "Phileas Fogg of London and his newly employed French valet Passepartout attempt to circumnavigate the world in 80 days on a £20,000 wager (roughly £1.6 million today) set by his friends at the Reform Club.",
+    "namedLocations": [
+      "London",
+      "Paris",
+      "Suez",
+      "Bombay",
+      "Calcutta",
+      "Hong Kong",
+      "Yokohoma",
+      "San Francisco",
+      "New York City",
+      "Liverpool"
+    ],
     "coverLink": "https://upload.wikimedia.org/wikipedia/commons/8/86/Verne_Tour_du_Monde.jpg",
     "bookType": "fiction",
     "gutenbergId": 103,
