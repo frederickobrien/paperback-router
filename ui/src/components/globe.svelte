@@ -1,10 +1,11 @@
 <script lang="ts">
 	// @ts-nocheck
-	export let bookData: GeoJSON.Feature | null = null;
+	export let bookData: Book | null = null;
 
 	import * as d3 from 'd3';
 	import worldMap from '../data/world.json';
 	import { onMount, afterUpdate } from 'svelte';
+	import type { Book } from '../data/interfaces/interfaces';
 
 	onMount(async () => {
 		let width = window.innerWidth;
@@ -85,7 +86,11 @@
 	});
 
 	afterUpdate(() => {
-		if (bookData) {
+		if (bookData?.geometryCollection) {
+			const lineStringCoords = bookData.geometryCollection.geometries.filter((feature) => {
+				return feature.type === 'LineString';
+			});
+
 			let map = d3.select('#map').append('g');
 
 			d3.select('#selectedBook').remove();
@@ -93,7 +98,7 @@
 			map
 				.append('path')
 				.attr('id', 'selectedBook')
-				.datum(bookData)
+				.datum(lineStringCoords[0])
 				.attr('d', d3.geoPath())
 				.attr('fill-opacity', 0)
 				.attr('stroke', 'red')

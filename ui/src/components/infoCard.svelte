@@ -1,8 +1,8 @@
 <script lang="ts">
-	import type { BookProperties } from '../types/bookProperties';
-	export let activeBook: GeoJSON.Feature;
+	import type { Book } from '../data/interfaces/interfaces';
+	export let activeBook: Book;
 
-	$: bookProperties = activeBook.properties as BookProperties;
+	$: bookProperties = activeBook.bookDetails;
 </script>
 
 <div class="info-card-container">

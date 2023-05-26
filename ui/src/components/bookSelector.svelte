@@ -1,30 +1,34 @@
 <script lang="ts">
-	export let activeBook: GeoJSON.Feature | null = null;
+	export let activeBook: Book | null = null;
+	
+	import type { Book } from '../data/interfaces/interfaces';
 
-	import aroundTheWorldInEightyDays from '../data/around-the-world-in-eighty-days.json';
-	import tracks from '../data/tracks.json';
-	import theGreatRailwayBazaar from '../data/the-great-railway-bazaar.json';
-	import theAdventuresOfHuckleberryFinn from '../data/the-adventures-of-huckleberry-finn.json';
-	import theGrapesOfWrath from '../data/the-grapes-of-wrath.json';
-	import theTravelsOfMarcoPolo from '../data/the-travels-of-marco-polo.json';
-	import donQuixote from '../data/don-quixote.json';
-	import mobyDick from '../data/moby-dick.json';
-	import journeyToTheWest from '../data/journey-to-the-west.json';
+	import aroundTheWorldInEightyDays from '../data/books/around-the-world-in-eighty-days.json';
+	import donQuixote from '../data/books/don-quixote.json';
+	import journeyToTheWest from '../data/books/journey-to-the-west.json';
+	import mobyDick from '../data/books/moby-dick.json';
+	import theAdventuresOfHuckleberryFinn from '../data/books/the-adventures-of-huckleberry-finn.json';
+	import theGrapesOfWrath from '../data/books/the-grapes-of-wrath.json';
+	import theGreatRailwayBazaar from '../data/books/the-great-railway-bazaar.json';
+	import theTravelsOfMarcoPolo from '../data/books/the-travels-of-marco-polo.json';
+	import tracks from '../data/books/tracks.json';
+
 </script>
 
 <label for="books">Choose a book:</label>
 <select name="books" id="books" bind:value={activeBook}>
 	<optgroup label="Fiction">
-		<option value={aroundTheWorldInEightyDays}>Around the World in Eighty Days</option>
-		<option value={donQuixote}>Don Quixote</option>
-		<option value={journeyToTheWest}>Journey to the West</option>
-		<option value={mobyDick}>Moby-Dick; Or, The Whale</option>
-		<option value={theAdventuresOfHuckleberryFinn}>The Adventures of Huckleberry Finn</option>
-		<option value={theGrapesOfWrath}>The Grapes of Wrath</option>
+		
+		<option value={aroundTheWorldInEightyDays}>{aroundTheWorldInEightyDays.bookDetails.name}</option>
+		<option value={donQuixote}>{donQuixote.bookDetails.name}</option>
+		<option value={journeyToTheWest}>{journeyToTheWest.bookDetails.name}</option>
+		<option value={mobyDick}>{mobyDick.bookDetails.name}</option>
+		<option value={theAdventuresOfHuckleberryFinn}>{theAdventuresOfHuckleberryFinn.bookDetails.name}</option>
+		<option value={theGrapesOfWrath}>{theGrapesOfWrath.bookDetails.name}</option>
 	</optgroup>
 	<optgroup label="Nonfiction">
-		<option value={theGreatRailwayBazaar}>The Great Railway Bazaar</option>
-		<option value={theTravelsOfMarcoPolo}>The Travels of Marco Polo</option>
-		<option value={tracks}>Tracks</option>
+		<option value={theGreatRailwayBazaar}>{theGreatRailwayBazaar.bookDetails.name}</option>
+		<option value={theTravelsOfMarcoPolo}>{theTravelsOfMarcoPolo.bookDetails.name}</option>
+		<option value={tracks}>{tracks.bookDetails.name}</option>
 	</optgroup>
 </select>

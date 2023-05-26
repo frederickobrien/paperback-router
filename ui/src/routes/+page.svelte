@@ -2,8 +2,9 @@
 	import Globe from '../components/globe.svelte';
 	import InfoBar from '../components/infoCard.svelte';
 	import BookSelector from '../components/bookSelector.svelte';
+	import type { Book } from '../data/interfaces/interfaces';
 
-	let activeBook: GeoJSON.Feature | null = null;
+	let activeBook: Book | null = null;
 </script>
 
 <svelte:head>

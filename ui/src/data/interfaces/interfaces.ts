@@ -1,4 +1,9 @@
-export type BookProperties = {
+export type Book = {
+    bookDetails: BookDetails;
+    geometryCollection: GeoJSON.GeometryCollection;
+}
+
+export type BookDetails = {
 	name: string;
 	author: string;
 	year: number;
@@ -11,10 +16,3 @@ export type BookProperties = {
 };
 
 type BookType = 'fiction' | 'non-fiction';
-
-type BookCoordinateObject = {
-	lat: number;
-	lng: number;
-	location: string;
-	passage: string;
-}
