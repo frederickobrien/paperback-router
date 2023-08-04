@@ -1,5 +1,5 @@
-Location,Latitude,Longitude
-Quixote's home,39.067,-3.122
+Location,Latitude,Longitude,CheckpointNotes
+Quixote's home,39.067,-3.122,Start
 Tomelloso,39.158,-3.021
 Campo de Criptana,39.4,-3.125
 El Toboso,39.513,-2.996
@@ -19,4 +19,4 @@ Fraga,41.521,0.341
 South of Lerida,41.552,0.619
 Santa Coloma de Queralt,41.532,1.382
 San Sadurnt,41.437,1.783
-Barcelona,41.385,2.173
+Barcelona,41.385,2.173,Finish

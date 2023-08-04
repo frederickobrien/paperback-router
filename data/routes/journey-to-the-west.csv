@@ -1,5 +1,5 @@
-Location,Latitude,Longitude
-Chang an,34.341,108.939
+Location,Latitude,Longitude,CheckpointNotes
+Chang an,34.341,108.939,Start
 Wuwei,37.928,102.642
 An-hsi,40.52,95.782
 Hami,42.818,93.515
@@ -87,4 +87,4 @@ Ruoqiang,39.024,88.166
 Dunhuang,40.142,94.661
 An-hsi --,40.52,95.782
 Wuwei,37.928,102.642
-Chang'an,34.341,108.939
+Chang'an,34.341,108.939,End

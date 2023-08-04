@@ -1,5 +1,5 @@
-Location,Latitude,Longitude
-Victoria Station,51.49521,-0.14390
+Location,Latitude,Longitude,CheckpointNotes
+Victoria Station,51.49521,-0.14390,Start
 Sevenoaks,51.27241,0.19090
 Dover,51.12788,1.31340
 Calais,50.95129,1.85869
@@ -25,4 +25,4 @@ Omsk,54.98848,73.32424
 Moscow,55.75583,37.61730
 Warsaw,52.22968,21.01223
 Berlin,52.52001,13.40495
-Amsterdam,52.37022,4.89517
+Amsterdam,52.37022,4.89517,Finish
