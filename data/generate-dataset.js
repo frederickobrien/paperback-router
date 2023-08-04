@@ -58,4 +58,4 @@ rawData.forEach(book => {
     });
 });
 
-fs.writeFileSync('./enriched-data.json', JSON.stringify(enrichedData));
+fs.writeFileSync('./output/enriched-data.json', JSON.stringify(enrichedData));
