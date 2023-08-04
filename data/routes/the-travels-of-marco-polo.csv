@@ -1,5 +1,5 @@
-Location,Latitude,Longitude
-,45.44,12.315
+Location,Latitude,Longitude,CheckpointNotes
+,45.44,12.315,Start
 ,40.166,18.652
 ,35.012,21.989
 ,32.933,35.082
@@ -60,4 +60,4 @@ Location,Latitude,Longitude
 ,36.004,23.197
 ,36.421,21.187
 ,40.597,18.605
-,45.44,12.315
+,45.44,12.315,Finish

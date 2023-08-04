@@ -1,5 +1,5 @@
-Location,Latitude,Longitude
-The Reform Club,51.506,-0.133
+Location,Latitude,Longitude,CheckpointNotes
+The Reform Club,51.506,-0.133,Start
 Dover,51.127,1.323
 Calais,50.956,1.868
 Lille,50.639,3.075
@@ -66,4 +66,4 @@ Dublin ship terminal,53.349,-6.197
 Liverpool ship terminal,53.443,-3.005
 Liverpool railway station,53.404,-2.980
 Euston Station,51.528,-0.133
-The Reform Club,51.506,-0.133
+The Reform Club,51.506,-0.133,Finish

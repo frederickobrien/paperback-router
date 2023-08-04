@@ -1,6 +1,6 @@
 export type Book = {
-    bookDetails: BookDetails;
-    geometryCollection: GeoJSON.GeometryCollection;
+	bookDetails: BookDetails;
+	geometryCollection: GeoJSON.GeometryCollection;
 }
 
 export type BookDetails = {
@@ -8,11 +8,10 @@ export type BookDetails = {
 	author: string;
 	year: number;
 	description: string;
-	namedLocations: string[];
 	coverLink?: string;
 	bookType: BookType;
-	gutenbergId?: number;
-	libriVoxLink?: string;
+	gutenbergId?: number | null;
+	libriVoxLink?: string | null;
 };
 
 type BookType = 'fiction' | 'non-fiction';

@@ -1,5 +1,5 @@
-Location,Latitude,Longitude
-Hannibal,39.708,-91.358
+Location,Latitude,Longitude,CheckpointNotes
+Hannibal,39.708,-91.358,Start
 Jackson's Island,39.706,-91.334
 ,39.273,-90.76
 ,39.04,-90.702
@@ -62,4 +62,4 @@ Memphis,35.162,-90.062
 ,33.604,-91.131
 ,33.563,-91.229
 ,33.469,-91.122
-Greenville,33.429,-91.118
+Greenville,33.429,-91.118,Finish

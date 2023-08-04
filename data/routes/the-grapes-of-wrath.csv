@@ -1,5 +1,5 @@
-Location,Latitude,Longitude
-Sallisaw,35.46,-94.787
+Location,Latitude,Longitude,CheckpointNotes
+Sallisaw,35.46,-94.787,Start
 ,35.49,-94.994
 ,35.48,-95.289
 ,35.457,-95.384
@@ -30,4 +30,4 @@ Barstow,34.895,-117.017
 Tehachap,35.132,-118.448
 Bakersfield,35.373,-119.018
 ,37.741,-121.558
-San Francisco,37.774,-122.419
+San Francisco,37.774,-122.419,Finish
