@@ -69,7 +69,7 @@ export const rawData = [
         "author": "Paulo Coelho",
         "year": 1988,
         "description": "The mystical story of Santiago, an Andalusian shepherd boy who yearns to travel in search of a worldly treasure.",
-        "coverLink": "https://en.wikipedia.org/wiki/The_Alchemist_(novel)#/media/File:TheAlchemist.jpg",
+        "coverLink": "https://pictures.abebooks.com/isbn/9780062502179-uk.jpg",
         "bookType": "fiction",
         "gutenbergId": null,
         "libriVoxLink": null,
