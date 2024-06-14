@@ -38,31 +38,15 @@
 	</div>
 	<div>
 		<p>{bookProperties.description}</p>
-		{#if bookProperties.namedLocations}
-			<h3>Locations</h3>
-			<ul>
-				{#each bookProperties.namedLocations as location}
-					<li>{location}</li>
-				{/each}
-			</ul>
-		{/if}
 	</div>
 </div>
 
 <style>
 	.info-card-container {
-		position: fixed;
-		top: 5%;
-		left: 5%;
-		height: 90%;
 		padding: 3em;
 		border-radius: 2rem;
 		line-height: 150%;
-		max-width: 30%;
-		background: rgba(170, 170, 170, 0.1);
-		box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-		backdrop-filter: blur(7px);
-		-webkit-backdrop-filter: blur(7px);
+		text-align: left;
 	}
 	.info-card-container * {
 		padding: 0.3rem 0;
