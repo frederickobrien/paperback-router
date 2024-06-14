@@ -1,7 +1,7 @@
 export type Book = {
 	bookDetails: BookDetails;
 	geometryCollection: GeoJSON.GeometryCollection;
-}
+};
 
 export type BookDetails = {
 	name: string;
