@@ -16,66 +16,61 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 </svelte:head>
 
-<main>
-	<header>
-		<h1>Paperback Router</h1>
-		<BookSelector bind:activeBook />
-		{#if activeBook}
-			<div class="desktop-info-bar">
-				<InfoBar {activeBook} />
-			</div>
-		{/if}
-	</header>
-
-	<div class="map-container">
-		<Map book={activeBook} />
+<div class="container">
+	<div class="header">
+		<header>
+			<h1>Paperback Router</h1>
+			<BookSelector bind:activeBook />
+		</header>
 	</div>
-	{#if activeBook}
-		<div class="mobile-info-bar">
-			<InfoBar {activeBook} />
+	<div class="map">
+		<div class="map-container">
+			<Map book={activeBook} />
 		</div>
-	{/if}
-</main>
+	</div>
+	<div class="info">
+		{#if activeBook}
+			<InfoBar {activeBook} />
+		{/if}
+	</div>
+</div>
 
 <style>
-	main {
-		display: flex;
-		flex-direction: column;
-	}
 	header {
 		margin: 0;
 		padding-bottom: 3rem;
-		background-color: #f0f0f0;
 		text-align: center;
 	}
 	h1 {
-		font-size: 2em;
+		font-size: 1.6em;
 		font-weight: 400;
 		margin: 2rem 0;
 	}
-	.desktop-info-bar {
-		display: none;
-	}
 	@media (min-width: 1024px) {
-		header {
-			position: fixed;
-			width: 25vw;
-			height: 100vh;
-			top: 0;
-			left: 0;
+		.container {
+			display: grid;
+			grid-template-columns: 1fr 3fr;
+			grid-template-rows: 15% auto;
+			gap: 0px 0px;
+			grid-auto-flow: row;
+			grid-template-areas:
+				'header map'
+				'info map';
 		}
-		.map-container {
-			position: fixed;
-			width: 75vw;
-			height: 100vh;
-			top: 0;
-			right: 0;
+
+		.header {
+			grid-area: header;
 		}
-		.desktop-info-bar {
-			display: block;
+
+		.map {
+			grid-area: map;
 		}
-		.mobile-info-bar {
-			display: none;
+
+		.info {
+			grid-area: info;
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-start;
 		}
 	}
 </style>

@@ -25,6 +25,9 @@
 </div>
 
 <style>
+	.selector-container {
+		font-size: 1rem;
+	}
 	.prompt {
 		margin-bottom: 0.5rem;
 	}
