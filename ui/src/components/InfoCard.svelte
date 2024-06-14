@@ -46,6 +46,7 @@
 		padding: 3em;
 		border-radius: 2rem;
 		line-height: 150%;
+		text-align: left;
 	}
 	.info-card-container * {
 		padding: 0.3rem 0;

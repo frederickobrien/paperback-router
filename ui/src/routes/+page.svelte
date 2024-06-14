@@ -16,43 +16,66 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 </svelte:head>
 
-<header>
-	<div class="selector">
+<main>
+	<header>
 		<h1>Paperback Router</h1>
 		<BookSelector bind:activeBook />
+		{#if activeBook}
+			<div class="desktop-info-bar">
+				<InfoBar {activeBook} />
+			</div>
+		{/if}
+	</header>
+
+	<div class="map-container">
+		<Map book={activeBook} />
 	</div>
 	{#if activeBook}
-		<InfoBar {activeBook} />
+		<div class="mobile-info-bar">
+			<InfoBar {activeBook} />
+		</div>
 	{/if}
-</header>
-
-<div class="map-container">
-	<Map book={activeBook} />
-</div>
+</main>
 
 <style>
+	main {
+		display: flex;
+		flex-direction: column;
+	}
 	header {
 		margin: 0;
-		position: fixed;
-		width: 25vw;
-		height: 100vh;
-		top: 0;
-		left: 0;
+		padding-bottom: 3rem;
 		background-color: #f0f0f0;
-	}
-	.selector {
 		text-align: center;
-	}
-	.map-container {
-		position: fixed;
-		width: 75vw;
-		height: 100vh;
-		top: 0;
-		right: 0;
 	}
 	h1 {
 		font-size: 2em;
 		font-weight: 400;
 		margin: 2rem 0;
+	}
+	.desktop-info-bar {
+		display: none;
+	}
+	@media (min-width: 1024px) {
+		header {
+			position: fixed;
+			width: 25vw;
+			height: 100vh;
+			top: 0;
+			left: 0;
+		}
+		.map-container {
+			position: fixed;
+			width: 75vw;
+			height: 100vh;
+			top: 0;
+			right: 0;
+		}
+		.desktop-info-bar {
+			display: block;
+		}
+		.mobile-info-bar {
+			display: none;
+		}
 	}
 </style>

@@ -8,16 +8,28 @@
 	const nonfictionBooks = bookData.filter((book) => book.bookDetails.bookType === 'non-fiction');
 </script>
 
-<label for="books">Choose a book:</label>
-<select name="books" id="books" bind:value={activeBook}>
-	<optgroup label="Fiction">
-		{#each fictionBooks as book}
-			<option value={book}>{book.bookDetails.name}</option>
-		{/each}
-	</optgroup>
-	<optgroup label="Nonfiction">
-		{#each nonfictionBooks as book}
-			<option value={book}>{book.bookDetails.name}</option>
-		{/each}
-	</optgroup>
-</select>
+<div class="selector-container">
+	<div class="prompt">Choose a book</div>
+	<select bind:value={activeBook}>
+		<optgroup label="Fiction">
+			{#each fictionBooks as book}
+				<option value={book}>{book.bookDetails.name}</option>
+			{/each}
+		</optgroup>
+		<optgroup label="Nonfiction">
+			{#each nonfictionBooks as book}
+				<option value={book}>{book.bookDetails.name}</option>
+			{/each}
+		</optgroup>
+	</select>
+</div>
+
+<style>
+	.prompt {
+		margin-bottom: 0.5rem;
+	}
+	select {
+		padding: 0.5rem;
+		border-radius: 0.5rem;
+	}
+</style>
