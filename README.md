@@ -38,3 +38,4 @@ This project is an attempt to map text narratives onto a map of the world. In lo
 - _Tracks_ by Robyn Davidson
 - [_The Travels of Marco Polo_](https://www.gutenberg.org/ebooks/10636) by Rustichello da Pisa
 - _Great Tang Records on the Western Regions_ by Xuanzang
+- _South: The Endurance Expedition_ by Ernest Shackleton
