@@ -478,14 +478,6 @@ var masonDixonCoordinates = [
   { lat: 38.46, lng: -75.693 }, //Right end
 ];
 
-// Eat, Pray, Love
-var EatPrayLoveCoordinates = [
-  { lat: 40.712, lng: -74.005 }, //New York
-  { lat: 41.902, lng: 12.496 }, //Rome
-  { lat: 19.501, lng: 73.013 }, //Mumbai
-  { lat: -8.409, lng: 115.188 }, //Bali
-];
-
 // Life of Pi
 var LifeofPiCoordinates = [
   { lat: 11.913, lng: 79.814 }, //Pondicherry
