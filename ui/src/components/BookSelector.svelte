@@ -4,6 +4,8 @@
 	import type { Book } from '../data/interfaces/interfaces';
 	import bookData from '../data/enriched-data.json';
 
+	bookData.sort((a, b) => a.bookDetails.name.localeCompare(b.bookDetails.name));
+
 	const fictionBooks = bookData.filter((book) => book.bookDetails.bookType === 'fiction');
 	const nonfictionBooks = bookData.filter((book) => book.bookDetails.bookType === 'non-fiction');
 </script>
