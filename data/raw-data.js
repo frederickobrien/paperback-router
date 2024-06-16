@@ -65,15 +65,15 @@ export const rawData = [
         "geoJsonFile": "the-adventures-of-huckleberry-finn.csv"
     },
     {
-        "name": "The Alchemist",
-        "author": "Paulo Coelho",
-        "year": 1988,
-        "description": "The mystical story of Santiago, an Andalusian shepherd boy who yearns to travel in search of a worldly treasure.",
-        "coverLink": "https://pictures.abebooks.com/isbn/9780062502179-uk.jpg",
-        "bookType": "fiction",
+        "name": "Zen and the Art of Motorcycle Maintenance",
+        "author": "Robert M. Pirsig",
+        "year": 1974,
+        "description": "An odyssey into life's challenging philosophical questions during an unforgettable summer motorcycle trip, Zen and the Art of Motorcycle Maintenance transformed a generation and continues to inspire millions.",
+        "coverLink": "https://one-handed-economist.com/wp-content/uploads/2023/05/large.jpg",
+        "bookType": "non-fiction",
         "gutenbergId": null,
         "libriVoxLink": null,
-        "geoJsonFile": "the-alchemist.csv"
+        "geoJsonFile": "zen-and-the-art-of-motorcycle-maintainance.csv"
     },
     {
         "name": "The Travels of Marco Polo",
