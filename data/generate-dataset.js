@@ -5,7 +5,11 @@ import { rawData } from './raw-data.js';
 const enrichedData = [];
 
 const createGeometryCollection = (csvFile) => {
-    const bookJson = csvToJson.fieldDelimiter(',').formatValueByType().getJsonFromCsv(`./routes/${csvFile}`);
+    const bookJson = csvToJson
+        .supportQuotedField(true)
+        .fieldDelimiter(',')
+        .formatValueByType()
+        .getJsonFromCsv(`./routes/${csvFile}`);
 
     const lineString = [];
     const checkPoints = [];
