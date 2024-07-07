@@ -6,15 +6,11 @@
 </script>
 
 <div class="info-card-container">
-	<div style="display: flex; gap: 2rem;">
-		<div style="flex: 1;">
-			<img
-				class="book-cover"
-				src={bookProperties.coverLink}
-				alt={`Book cover of ${bookProperties.name}`}
-			/>
+	<div class="card-header">
+		<div class="book-cover">
+			<img src={bookProperties.coverLink} alt={`Book cover of ${bookProperties.name}`} />
 		</div>
-		<div style="flex: 2;">
+		<div class="book-details">
 			<h2>{bookProperties.name}</h2>
 			<h3>{bookProperties.author}</h3>
 			<p>{bookProperties.year}</p>
@@ -43,17 +39,24 @@
 
 <style>
 	.info-card-container {
-		padding: 3em;
+		display: flex;
+		flex-direction: column;
+		gap: 2rem;
 		border-radius: 2rem;
 		line-height: 150%;
 		text-align: left;
+		padding: 3rem;
 	}
-	.info-card-container * {
-		padding: 0.3rem 0;
+	.card-header {
+		display: flex;
+		gap: 2rem;
 	}
 	.book-cover {
-		transform: perspective(1000px) rotateX(4deg) rotateY(-16deg) rotateZ(4deg);
+		flex: 1;
 		box-shadow: 24px 16px 64px 0 rgba(0, 0, 0, 0.08);
 		border-radius: 2px;
+	}
+	.book-details {
+		flex: 3;
 	}
 </style>

@@ -58,6 +58,19 @@
 						{#if geometry.type === 'LineString'}
 							<path class="book-path" d={path(geometry)} />
 						{/if}
+						{#if geometry.type === 'Point'}
+							<path class="marker" d={path(geometry)} />
+							<!-- <text
+								x={projection(geometry.coordinates)[0]}
+								y={projection(geometry.coordinates)[1]}
+								fill="white"
+								font-size="12"
+								text-anchor="middle"
+								dy="-1.5em"
+							>
+								{geometry.properties.notes}
+							</text> -->
+						{/if}
 					{/each}
 				{/if}
 				<path
@@ -98,6 +111,9 @@
 	}
 	button {
 		padding: 0.5rem;
+	}
+	.marker {
+		fill: darkred;
 	}
 	@media (min-width: 1024px) {
 		.map {

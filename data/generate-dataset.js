@@ -29,7 +29,11 @@ const createGeometryCollection = (csvFile) => {
             lineString.push(coords);
         }
         if (entry.CheckpointNotes !== '') {
-            checkPoints.push([entry.Longitude, entry.Latitude]);
+            checkPoints.push({
+                longitude: entry.Longitude,
+                latitude: entry.Latitude,
+                CheckpointNotes: entry.CheckpointNotes
+            });
         }
     });
 
@@ -46,7 +50,10 @@ const createGeometryCollection = (csvFile) => {
     checkPoints.forEach((checkPoint) => {
         geometryCollection.geometries.push({
             type: 'Point',
-            coordinates: checkPoint
+            coordinates: [checkPoint.longitude, checkPoint.latitude],
+            properties: {
+                notes: checkPoint.CheckpointNotes
+            }
         });
     });
 
