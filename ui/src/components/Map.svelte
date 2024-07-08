@@ -4,7 +4,11 @@
 
 	export let book;
 
-	const projection = geoOrthographic().fitSize([1000, 1000], { type: 'Sphere' });
+	const globeSize = 5000;
+
+	const projection = geoOrthographic()
+		.fitSize([globeSize, globeSize], { type: 'Sphere' })
+		.scale(2250);
 
 	$: isSpinning = false;
 	$: path = geoPath().projection(projection);
@@ -37,6 +41,14 @@
 			})
 		);
 	};
+
+	const zoomHandler = (event) => {
+		const scale = projection.scale();
+		const newScale = scale - event.deltaY;
+		if (newScale < 2250 || newScale > 10000) return;
+		projection.scale(newScale);
+		path = geoPath().projection(projection);
+	};
 </script>
 
 <div class="container">
@@ -46,12 +58,12 @@
 		</button>
 	</div>
 
-	<div class="map">
-		<svg viewBox="0 0 1000 1000">
+	<div class="map" on:wheel={zoomHandler}>
+		<svg viewBox={`0 0 ${globeSize} ${globeSize}`}>
 			<g>
-				<path d={path({ type: 'Sphere' })} fill="#f1f1f1" stroke="none" />
+				<path d={path({ type: 'Sphere' })} class="globe-sea-colour" stroke="none" />
 				{#each worldMapGeoJson.features as feature}
-					<path d={path(feature)} fill="lightgray" stroke="none" />
+					<path d={path(feature)} class="globe-land-colour" stroke="none" />
 				{/each}
 				{#if book?.geometryCollection}
 					{#each book.geometryCollection.geometries as geometry}
@@ -63,7 +75,7 @@
 							<!-- <text
 								x={projection(geometry.coordinates)[0]}
 								y={projection(geometry.coordinates)[1]}
-								fill="white"
+								fill="black"
 								font-size="12"
 								text-anchor="middle"
 								dy="-1.5em"
@@ -89,9 +101,14 @@
 		position: relative;
 	}
 	.map {
-		width: 100%;
-		padding: 4rem 2rem;
 		background-color: #252525;
+		overflow: hidden;
+	}
+	.globe-sea-colour {
+		fill: #f1f1f1;
+	}
+	.globe-land-colour {
+		fill: lightgray;
 	}
 	svg {
 		width: 100%;
@@ -99,8 +116,8 @@
 	}
 	.book-path {
 		fill-opacity: 0;
-		stroke: red;
-		stroke-width: 1;
+		stroke: rgb(192, 50, 50);
+		stroke-width: 5;
 	}
 	.settings {
 		position: absolute;
@@ -113,12 +130,13 @@
 		padding: 0.5rem;
 	}
 	.marker {
-		fill: darkred;
+		fill: rgb(192, 50, 50);
+		stroke: rgb(192, 50, 50);
+		stroke-width: 5px;
 	}
 	@media (min-width: 1024px) {
 		.map {
 			height: 100vh;
-			padding: 2rem;
 		}
 	}
 </style>
